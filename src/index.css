@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* Colors */
+  --color-thai-blue: #2563eb;
+  --color-thai-blue-light: #dbeafe;
+  --color-phonetic-purple: #7c3aed;
+  --color-phonetic-light: #ede9fe;
+  --color-meaning-orange: #c2410c;
+  --color-meaning-light: #ffedd5;
+  --color-tip-green: #16a34a;
+  --color-tip-light: #dcfce7;
+  --color-warning-red: #dc2626;
+  --color-warning-light: #fee2e2;
+  --color-highlight-yellow: #ca8a04;
+  --color-highlight-light: #fefce8;
+  
+  /* Brand */
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-brand-700: #0369a1;
+
+  /* Neutrals */
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+
+  /* Dark mode */
+  --color-dark-surface: #0f172a;
+  --color-dark-surface-alt: #1e293b;
+  --color-dark-border: #334155;
+  --color-dark-text-primary: #f1f5f9;
+  --color-dark-text-secondary: #94a3b8;
+
+  /* Typography */
+  --font-thai: 'Noto Sans Thai', sans-serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Shadow */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-elevated: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface-alt);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+  background-color: var(--color-dark-surface);
+  color: var(--color-dark-text-primary);
+}
+
+/* Thai text utility */
+.thai-text {
+  font-family: var(--font-thai);
+  color: var(--color-thai-blue);
+  font-size: 1.4em;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.phonetic-text {
+  color: var(--color-phonetic-purple);
+  font-style: italic;
+}
+
+.meaning-text {
+  color: var(--color-meaning-orange);
+  font-weight: 600;
+}
